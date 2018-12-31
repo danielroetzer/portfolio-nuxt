@@ -1,0 +1,35 @@
+{
+  "name": "my-portfolio",
+  "version": "0.0.1",
+  "description": "Building a portfolio website with Nuxt.js",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/daniel.roetzer/my-portfolio.git"
+  },
+  "keywords": [
+    "Nuxt.js",
+    "SCSS",
+    "Portfolio"
+  ],
+  "author": "Daniel Rötzer <roetzer.daniel@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/daniel.roetzer/my-portfolio/issues"
+  },
+  "homepage": "https://gitlab.com/daniel.roetzer/my-portfolio#readme",
+  "dependencies": {
+    "nuxt": "^2.3.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "tailwindcss": "~0.7.3"
+  }
+}
