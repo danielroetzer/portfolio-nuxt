@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="navbar">Navbar</div>
+    <!--<div class="navbar">Navbar</div>-->
     <nuxt/>
   </div>
 </template>
@@ -9,7 +9,7 @@
 @import "~assets/scss/_variables.scss";
 .navbar {
   color: white;
-  background-color: darken($main-color-dark, 5%);
+  background-color: #2D4C88;
   height: $navbar-height;
 
   position: relative;
