@@ -1,0 +1,13 @@
+.main-title {
+  font-size: 1.5em;
+  //font-weight: 700;
+  //font-family: 'Kalam', cursive;
+  margin-bottom: 8px;
+  color: map-get($colors, primary);
+}
+
+.sub-title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: map-get($colors, primary);
+}
