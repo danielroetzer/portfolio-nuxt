@@ -41,5 +41,4 @@ module.exports = {
     linkActiveClass: "is-active", // Declare the class to set on active routing items
     linkExactActiveClass: "is-active"
   }
-
 }

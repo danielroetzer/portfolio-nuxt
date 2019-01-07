@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div class="navbar-burger">Menu</div>
       <div class="navbar-menu">
-        <nuxt-link class="navbar-item" to="/" exact>My experience</nuxt-link>
+        <nuxt-link class="navbar-item" to="/" exact>My Experience</nuxt-link>
         <nuxt-link class="navbar-item" to="/projects">Projects</nuxt-link>
         <nuxt-link class="navbar-item" to="/about">About this Site</nuxt-link>
         <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
