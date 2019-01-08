@@ -14,7 +14,7 @@
         <ion-icon name="ios-close" class="mobile-navbar-menu-close" @click="toggleMobileNavigation"></ion-icon>
       </div>
 
-      <div class="navbar-menu">
+      <div class="navbar-menu" @click="closeMobileNavigation">
         <nuxt-link class="navbar-item" to="/" exact>{{pageNames.index}}</nuxt-link>
         <nuxt-link class="navbar-item" to="/projects">{{pageNames.projects}}</nuxt-link>
         <nuxt-link class="navbar-item" to="/about">{{pageNames.about}}</nuxt-link>
@@ -69,7 +69,9 @@ export default {
   methods: {
     toggleMobileNavigation: function() {
       this.mobileMenuActive = !this.mobileMenuActive;
-      console.log(this.mobileMenuActive);
+    },
+    closeMobileNavigation: function() {
+      this.mobileMenuActive = false;
     }
   }
 }
@@ -99,13 +101,21 @@ export default {
     background-color: map-get($colors, primary);
     width: 100%;
     height: 100%;
-    animation: example .35s;
+    animation: example .45s;
     z-index: 200;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
+    @keyframes example {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @media screen and (min-width: $utility-breakpoint){
+      display: none;
+    }
 
     .navbar-item {
       display: flex;
@@ -131,11 +141,6 @@ export default {
         color: black;
       }
     }
-  }
-
-  @keyframes example {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
   }
 
   .navbar-menu {

@@ -23,7 +23,6 @@ module.exports = {
       //{ href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css", rel: "stylesheet" }
     ],
     script: [
-      { src: "assets/js/main.js", body: true },
       { src: "https://unpkg.com/ionicons@4.5.0/dist/ionicons.js", body: true } // Use body: true, to load scripts at the end of <body></body>
     ]
   },
