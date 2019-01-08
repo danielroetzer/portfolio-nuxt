@@ -1,12 +1,24 @@
 <template>
   <div class="navigation">
     <nav class="navbar">
-      <div class="navbar-burger">Menu</div>
+      <div class="navbar-burger" @click="toggleMobileNavigation">
+        <ion-icon name="arrow-forward"></ion-icon>
+        <span>{{activePage}}</span>
+      </div>
+      <div class="mobile-navbar-menu" v-show="mobileMenuActive === true">
+        <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/" exact>{{pageNames.index}}</nuxt-link>
+        <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/projects">{{pageNames.projects}}</nuxt-link>
+        <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/about">{{pageNames.about}}</nuxt-link>
+        <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/contact">{{pageNames.contact}}</nuxt-link>
+
+        <ion-icon name="ios-close" class="mobile-navbar-menu-close" @click="toggleMobileNavigation"></ion-icon>
+      </div>
+
       <div class="navbar-menu">
-        <nuxt-link class="navbar-item" to="/" exact>My Experience</nuxt-link>
-        <nuxt-link class="navbar-item" to="/projects">Projects</nuxt-link>
-        <nuxt-link class="navbar-item" to="/about">About this Site</nuxt-link>
-        <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
+        <nuxt-link class="navbar-item" to="/" exact>{{pageNames.index}}</nuxt-link>
+        <nuxt-link class="navbar-item" to="/projects">{{pageNames.projects}}</nuxt-link>
+        <nuxt-link class="navbar-item" to="/about">{{pageNames.about}}</nuxt-link>
+        <nuxt-link class="navbar-item" to="/contact">{{pageNames.contact}}</nuxt-link>
       </div>
     </nav>
 
@@ -29,17 +41,101 @@
 </template>
 
 
+<script>
+
+const pageNames = {
+  index: "My Experience",
+  projects: "Projects",
+  about: "About this Site",
+  contact: "Contact"
+}
+
+export default {
+  data() {
+    return {
+      mobileMenuActive: false,
+      pageNames
+    }
+  },
+  computed: {
+    activePage: function() {
+      if(pageNames[this.$nuxt.$route.name]) {
+        return pageNames[this.$nuxt.$route.name];
+      }
+
+      return "unknown";
+    }
+  },
+  methods: {
+    toggleMobileNavigation: function() {
+      this.mobileMenuActive = !this.mobileMenuActive;
+      console.log(this.mobileMenuActive);
+    }
+  }
+}
+</script>
+
+
+
 <style lang="scss" scoped>
 @import "~assets/scss/_variables.scss";
 
 .navbar {
   .navbar-burger {
-    //float: left;
     cursor: pointer;
+    display: flex;
+    margin-bottom: 15px;
 
     @media screen and (min-width: $utility-breakpoint){
+      margin-bottom: 0;
       display: none;
     }
+  }
+
+  .mobile-navbar-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: map-get($colors, primary);
+    width: 100%;
+    height: 100%;
+    animation: example .35s;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .navbar-item {
+      display: flex;
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      margin: 20px 0;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .mobile-navbar-menu-close {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      color: white;
+      font-size: 48px;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  @keyframes example {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
 
   .navbar-menu {
