@@ -101,7 +101,7 @@ export default {
     background-color: map-get($colors, primary);
     width: 100%;
     height: 100%;
-    animation: example .45s;
+    animation: example .35s;
     z-index: 200;
     display: flex;
     flex-direction: column;
