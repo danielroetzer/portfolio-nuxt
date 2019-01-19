@@ -36,6 +36,15 @@
         I simply push changes to the master branch and Netlify does the rest.
       </div>
     </div>
+
+    <div class="main-title">Contact</div>
+    <div class="infoblock">
+      You can reach me under:
+      <a href="mailto:roetzer.daniel@gmail.com" class="mailto" target="_top">
+        <i class="fas fa-envelope"></i>
+        <span>roetzer.daniel@gmail.com</span>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -45,8 +54,24 @@
 </script>
 
 <style lang="scss" scoped>
+@import "~assets/scss/_variables.scss";
+
 .infoblock {
   font-size: 14px;
   margin-bottom: 35px;
+
+  .mailto {
+    color: map-get($colors, text);
+    text-decoration: none;
+
+    i {
+      margin-left: 5px;
+      margin-right: 2px;
+    }
+
+    &:hover {
+      color: map-get($colors, primary);
+    }
+  }
 }
 </style>

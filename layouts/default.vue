@@ -6,21 +6,25 @@
 
     <div class="page-container">
       <div class="page-content">
-        <nuxt/>
+        <div class="container mx-auto">
+          <nuxt/>
+        </div>
       </div>
     </div>
+
+    <Footer/>
   </div>
 </template>
 
 
 <script>
 import Navigation from '~/components/Navigation.vue';
-
-//console.log(this.$nuxt.$route.name);
+import Footer from '~/components/Footer.vue';
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    Footer
   }
 }
 </script>
@@ -49,6 +53,7 @@ export default {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 10;
     //padding-top: 45px;
   }
 }
@@ -59,14 +64,12 @@ export default {
 
   @media screen and (min-width: $utility-breakpoint){
     margin-left: $utility-width;
-    max-width: $content-width;
+    //max-width: $content-width;
   }
 
   .page-content {
-    margin: 0 auto;
-
-    @media screen and (min-width: $utility-breakpoint){
-      max-width: 600px;
+    .container {
+      max-width: 1100px;
     }
   }
 }
