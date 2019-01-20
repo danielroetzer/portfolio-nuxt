@@ -25,7 +25,7 @@
   width: 100%;
   border-top: 1px solid lightgray;
   background-color: white;
-  padding: 5px 10px;
+  padding: 10px 15px;
   font-size: 12px;
   
   .left {
@@ -50,7 +50,7 @@
   }
   
   @media screen and (min-width: $utility-breakpoint){
-    padding-left: $utility-width + 10px;
+    padding-left: $utility-width + 15px;
   }
 }
 </style>

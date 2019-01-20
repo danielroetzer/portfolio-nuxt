@@ -13,8 +13,10 @@ module.exports = {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
+      { name: "author", content: "Daniel Rötzer" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'keywords', name: 'keywords', content: "Nuxt.js, Vue.js, Scss, Portfolio Website" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },

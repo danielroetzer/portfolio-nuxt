@@ -46,6 +46,8 @@ export default {
   width: 100%;
   padding: 20px;
   font-weight: 300;
+  // box-shadow: 0 2px 2px -2px #777;
+  box-shadow: 0 2px 6px 0 #777;
 
   @media screen and (min-width: $utility-breakpoint){
     max-width: $utility-width;
@@ -54,7 +56,7 @@ export default {
     left: 0;
     top: 0;
     z-index: 10;
-    //padding-top: 45px;
+    box-shadow: 1px 0 6px 0 #777;
   }
 }
 
