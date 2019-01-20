@@ -38,6 +38,7 @@
     .mailto {
       color: map-get($colors, text);
       text-decoration: none;
+      white-space: nowrap;
 
       i {
         margin-right: 2px;

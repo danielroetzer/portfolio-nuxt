@@ -7,16 +7,16 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    htmlAttrs: {
+    /*htmlAttrs: {
       lang: 'en',
-    },
+    },*/
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
       { name: "author", content: "Daniel Rötzer" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { hid: 'keywords', name: 'keywords', content: "Nuxt.js, Vue.js, Scss, Portfolio Website" }
+      { hid: 'keywords', name: 'keywords', content: "Nuxt.js, Vue.js, Scss, i18n, Portfolio Website" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
@@ -42,6 +42,20 @@ module.exports = {
 
   router: {
     linkActiveClass: "is-active", // Declare the class to set on active routing items
-    linkExactActiveClass: "is-active"
+    linkExactActiveClass: "is-active",
+    middleware: 'i18n'   // middleware all pages of the application
+  },
+
+  build: {
+    vendor: ['vue-i18n'] // webpack vue-i18n.bundle.js
+  },
+
+  plugins: ['~/plugins/i18n.js'], // webpack plugin
+
+  generate: {
+    routes: [
+      '/de', '/de/about', '/de/projects', '/de/contact',
+      '/en', '/en/about', '/en/projects', '/en/contact'
+    ]
   }
 }

@@ -39,13 +39,14 @@ export default {
   .mailto {
     color: white;
     text-decoration: none;
+    white-space: nowrap;
 
     i {
       margin-right: 2px;
     }
 
     &:hover {
-      color: black;
+      color: map-get($colors, text);
     }
   }
 

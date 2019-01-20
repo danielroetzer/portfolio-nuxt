@@ -1,63 +1,75 @@
 <template>
   <nav class="navbar">
-    <button class="navbar-burger" @click="toggleMobileNavigation">
-      <i class="fas fa-bars"></i>
-      <span>{{activePage}}</span>
-    </button>
+    <!-- Mobile switches -->
+    <div class="mobile-navbar">
+      <button class="navbar-burger" @click="toggleMobileNavigation">
+        <i class="fas fa-bars"></i>
+        <span>{{activePage}}</span>
+      </button>
+      <nuxt-link class="mobile-i18n" v-if="$i18n.locale === 'de'" :to="'/en' + $route.fullPath.replace(/\/de/gi, '')" exact>
+        <span>English</span>
+        <i class="fas fa-language"></i>
+      </nuxt-link>
+      <nuxt-link class="mobile-i18n" v-else :to="'/de' + $route.fullPath.replace(/\/en/gi, '')" exact>
+        <span>Deutsch</span>
+        <i class="fas fa-language"></i>
+      </nuxt-link>
+    </div>
+
+    <!-- Navbar for mobile -->
     <div class="mobile-navbar-menu" v-show="mobileMenuActive === true">
-      <!-- <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/" exact>{{pageNames.index}}</nuxt-link>
-      <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/projects">{{pageNames.projects}}</nuxt-link>
-      <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/about">{{pageNames.about}}</nuxt-link>
-      <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/contact">{{pageNames.contact}}</nuxt-link> -->
-      <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" v-for="item in navItems" :key="item.id" :to="item.to" :exact="item.exact">{{item.pageName}}</nuxt-link>
+      <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" v-for="item in navItems" :key="item.id" :to="item.to" :exact="item.exact">
+        {{item.pageName}}
+      </nuxt-link>
 
       <button class="mobile-navbar-menu-close" @click="toggleMobileNavigation">
         <i class="fas fa-times"></i>
       </button>
     </div>
 
-    <!-- <div class="navbar-menu" @click="closeMobileNavigation">
-      <nuxt-link class="navbar-item" to="/" :exact="false">{{pageNames.index}}</nuxt-link>
-      <nuxt-link class="navbar-item" to="/projects">{{pageNames.projects}}</nuxt-link>
-      <nuxt-link class="navbar-item" to="/about">{{pageNames.about}}</nuxt-link>
-      <nuxt-link class="navbar-item" to="/contact">{{pageNames.contact}}</nuxt-link>
-    </div> -->
 
+    <!-- Desktop Navbar -->
     <div class="navbar-menu" @click="closeMobileNavigation">
-      <nuxt-link class="navbar-item" v-for="item in navItems" :key="item.id" :to="item.to" :exact="item.exact">{{item.pageName}}</nuxt-link>
+      <nuxt-link class="navbar-item" v-for="item in navItems" :key="item.id" :to="item.to" :exact="item.exact">
+        {{item.pageName}}
+      </nuxt-link>
+    </div>
+
+    <!-- Language switch -->
+    <div class="i18n">
+      <nuxt-link v-if="$i18n.locale === 'de'" :to="'/en' + $route.fullPath.replace(/\/de/gi, '')" exact>
+        <i class="fas fa-language"></i>
+        <span>English</span>
+      </nuxt-link>
+      <nuxt-link v-else :to="'/de' + $route.fullPath.replace(/\/en/gi, '')" exact>
+        <i class="fas fa-language"></i>
+        <span>Deutsch</span>
+      </nuxt-link>
     </div>
   </nav>
 </template>
 
 
 <script>
-
-// const pageNames = {
-//   index: "My Experience",
-//   projects: "Projects",
-//   about: "About this Site"
-// }
-
-// Every array entry will be rendered as a .navbar-item
-const navItems = [
-  { exact: true, to: "/", id: "index", pageName: "Portfolio" },
-  { exact: false, to: "/about", id: "about", pageName: "About this Site" },
-  { exact: false, to: "/projects", id: "projects", pageName: "Projects" },
-  //{ exact: false, to: "/contact", id: "contact", pageName: "Contact" }
-];
-
 export default {
   data() {
     return {
-      mobileMenuActive: false,
-      navItems
+      mobileMenuActive: false
     }
   },
   computed: {
+    navItems: function() {
+      return [
+        { exact: true, to: this.$i18n.path(""), id: "index", routeName: "lang", pageName: this.$t("links.index") },
+        { exact: false, to: this.$i18n.path('about'), id: "about", routeName: "lang-about", pageName: this.$t("links.about") },
+        { exact: false, to: this.$i18n.path('projects'), id: "projects", routeName: "lang-projects", pageName: this.$t("links.projects") },
+        //{ exact: false, to: "/contact", id: "contact", pageName: "Contact" }
+      ]
+    },
     activePage: function() {
       // Find active page
-      const item = navItems.find(item => {
-        if(item.id === this.$nuxt.$route.name) {
+      const item = this.navItems.find(item => {
+        if(item.routeName === this.$nuxt.$route.name) {
           return true;
         }
 
@@ -86,25 +98,48 @@ export default {
 .navbar {
   padding: 5px 0;
 
-  .navbar-burger {
-    color: white;
-    outline: none;
-    display: inline-block;
+  .mobile-navbar {
+    display: flex;
+    justify-content: space-between;
 
-    &:hover {
-      color: black;
+    .navbar-burger {
+      color: white;
+      outline: none;
+
+      &:hover {
+        color: map-get($colors, text);
+      }
+
+      span {
+        margin-left: 5px;
+      }
+
+      @media screen and (min-width: $utility-breakpoint){
+        display: none;
+      }
     }
 
-    span {
-      display: inline-block;
-      margin-left: 5px;
-    }
+    .mobile-i18n {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
 
-    @media screen and (min-width: $utility-breakpoint){
-      margin-bottom: 0;
-      display: none;
+      &:hover {
+        color: map-get($colors, text);
+      }
+
+      i {
+        font-size: 20px;
+        margin-left: 6px;
+      }
+
+      @media screen and (min-width: $utility-breakpoint){
+        display: none;
+      }
     }
   }
+
 
   .mobile-navbar-menu {
     position: absolute;
@@ -138,11 +173,11 @@ export default {
 
       &.is-active {
         text-decoration: underline;
-        color: black;
+        color: map-get($colors, text);
       }
 
       &:hover {
-        color: black;
+        color: map-get($colors, text);
       }
     }
 
@@ -156,7 +191,7 @@ export default {
       outline: 0;
 
       &:hover {
-        color: black;
+        color: map-get($colors, text);
       }
     }
   }
@@ -175,7 +210,6 @@ export default {
 
     // used for <nuxt-link> components
     .navbar-item {
-      //display: block;
       text-decoration: none;
       color: white;
       font-size: 1.2em;
@@ -185,10 +219,36 @@ export default {
 
       &.is-active, &:hover {
         background-color: white;
-        color: black;
+        color: map-get($colors, text);
         box-shadow: -1px 1px 4px #333;
         border-radius: 4px;
       }
+    }
+  }
+
+  .i18n {
+    width: 100%;
+    text-align: center;
+    display: none;
+
+    a {
+      font-size: 1.2em;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: map-get($colors, text);
+      }
+
+      i {
+        margin-right: 4px;
+      }
+    }
+
+    @media screen and (min-width: $utility-breakpoint){
+      display: block;
+      padding: 20px 0;
+      border-bottom: 1px solid white;
     }
   }
 }

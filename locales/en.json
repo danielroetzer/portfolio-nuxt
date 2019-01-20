@@ -1,0 +1,10 @@
+{
+  "links": {
+    "index": "Portfolio",
+    "about": "About this Site",
+    "projects": "Projects",
+    "contact": "Contact",
+    "german": "German",
+    "english": "English"
+  }
+}
