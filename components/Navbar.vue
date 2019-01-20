@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar">
-    <div class="navbar-burger" @click="toggleMobileNavigation">
+    <button class="navbar-burger" @click="toggleMobileNavigation">
       <i class="fas fa-bars"></i>
       <span>{{activePage}}</span>
-    </div>
+    </button>
     <div class="mobile-navbar-menu" v-show="mobileMenuActive === true">
       <!-- <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/" exact>{{pageNames.index}}</nuxt-link>
       <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" to="/projects">{{pageNames.projects}}</nuxt-link>
@@ -87,7 +87,8 @@ export default {
   padding: 5px 0;
 
   .navbar-burger {
-    cursor: pointer;
+    color: white;
+    outline: none;
     display: inline-block;
 
     &:hover {
