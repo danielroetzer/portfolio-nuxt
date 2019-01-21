@@ -16,7 +16,7 @@ module.exports = {
       { name: "author", content: "Daniel Rötzer" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { hid: 'keywords', name: 'keywords', content: "Nuxt.js, Vue.js, Scss, i18n, Portfolio Website" }
+      { hid: 'keywords', name: 'keywords', content: "Nuxt.js, Vue.js, SCSS, i18n, Portfolio Website" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
@@ -47,7 +47,7 @@ module.exports = {
   },
 
   build: {
-    vendor: ['vue-i18n'] // webpack vue-i18n.bundle.js
+    //vendor: ['vue-i18n'] // webpack vue-i18n.bundle.js
   },
 
   plugins: ['~/plugins/i18n.js'], // webpack plugin

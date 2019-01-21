@@ -57,7 +57,7 @@
   margin-bottom: 35px;
 
   .mailto {
-    color: map-get($colors, text);
+    color: map-get($colors, dark);
     text-decoration: none;
     white-space: nowrap;
 

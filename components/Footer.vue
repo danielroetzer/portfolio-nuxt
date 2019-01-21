@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="left">
       <i class="far fa-copyright"></i>
       Daniel Rötzer, 1100 Vienna
@@ -11,7 +11,7 @@
         <span>roetzer.daniel@gmail.com</span>
       </a>
     </div>
-  </div>
+  </footer>
 </template>
 
 
@@ -36,7 +36,7 @@
     float: right;
 
     .mailto {
-      color: map-get($colors, text);
+      color: map-get($colors, dark);
       text-decoration: none;
       white-space: nowrap;
 

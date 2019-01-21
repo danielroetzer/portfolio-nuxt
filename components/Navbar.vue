@@ -107,7 +107,7 @@ export default {
       outline: none;
 
       &:hover {
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
       }
 
       span {
@@ -126,7 +126,7 @@ export default {
       align-items: center;
 
       &:hover {
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
       }
 
       i {
@@ -173,11 +173,11 @@ export default {
 
       &.is-active {
         text-decoration: underline;
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
       }
 
       &:hover {
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
       }
     }
 
@@ -191,7 +191,7 @@ export default {
       outline: 0;
 
       &:hover {
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
       }
     }
   }
@@ -219,7 +219,7 @@ export default {
 
       &.is-active, &:hover {
         background-color: white;
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
         box-shadow: -1px 1px 4px #333;
         border-radius: 4px;
       }
@@ -237,7 +237,7 @@ export default {
       text-decoration: none;
 
       &:hover {
-        color: map-get($colors, text);
+        color: map-get($colors, dark);
       }
 
       i {

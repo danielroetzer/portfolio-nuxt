@@ -6,5 +6,79 @@
     "contact": "Kontakt",
     "german": "Deutsch",
     "english": "Englisch"
+  },
+  "introduction": {
+    "developer": "Webentwickler"
+  },
+  "index": {
+    "education": {
+      "title": "Ausbildung",
+      "school": {
+        "title": "IT-HTL Ybbs",
+        "subtitle": "(2011 - 2017)",
+        "text": "Ausbildungschwerpunkt Medientechnik."
+      }
+    },
+    "internships": {
+      "title": "Ferialpraxis",
+      "A1": {
+        "title": "A1 Telekom Austria",
+        "subtitle": "(Juli 2011, Juli 2014)",
+        "ul": [
+          "Installation und Konfiguration von Betriebssystemen",
+          "Mithilfe bei den Installationen von POTS-, ISDN-, ADSL- und Business-Anschlüssen",
+          "Entstörung von A1-TV"
+        ]
+      },
+      "Quarzwerke": {
+        "title": "Quarzwerke Melk",
+        "subtitle": "(Juli 2016)"
+      }
+    },
+    "experience": {
+      "title": "Berufserfahrung",
+      "it-center": {
+        "title": "IT-Center Ybbs",
+        "subtitle": "(19. März 2018 - 1. Februar 2019)",
+        "text": "Entwicklung und Betreuung zweier Apps, für Android und IOS, mithilfe des Ionic Frameworks (Angular, SCSS, Cordova). Verwaltung und Weiterentwicklung der zugehörigen Webseite"
+      }
+    },
+    "knowledge": {
+      "title": "Spezielle IT-Kenntnisse",
+      "grading": "(1 = sehr gute Kenntnisse, 2 = gute Kenntnisse, 3 = Grundkenntnisse)",
+      "programming": {
+        "title": "Programmieren",
+        "ul": [
+          "C, C#, Java (2)",
+          "Android, IOS (3)"
+        ]
+      },
+      "webdev": {
+        "title": "Webentwicklung",
+        "ul": [
+          "HTML5, CSS, SCSS/LESS, JavaScript/Typescript, Ionic Framework, Node.js, RethinkDB (1)",
+          "Gulp/Grunt, PHP, Socket.IO (2)",
+          "Nuxt.js, Vue.js (3), Angular (3)"
+        ]
+      },
+      "other": {
+        "title": "Weitere gesammelte Kenntnisse",
+        "ul": [
+          "Typo3, Oracle, network technology and security (3)"
+        ]
+      }
+    },
+    "language": {
+      "title": "Sprachkenntnisse",
+      "text": "Deutsch und Englisch - Maturaniveau."
+    },
+    "hobbies": {
+      "title": "Hobbys",
+      "text": "Snowboarden, Schwimmen, Fußball, Lesen, Landschaftsmalerei."
+    },
+    "personal": {
+      "title": "Persönliche Eigenschaften",
+      "text": "Selbstständiges Arbeiten, Hilfsbereitschaft, Erworbene Teamfähigkeiten im Fußballverein SCU Emmersdorf."
+    }
   }
 }

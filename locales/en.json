@@ -6,5 +6,79 @@
     "contact": "Contact",
     "german": "German",
     "english": "English"
+  },
+  "introduction": {
+    "developer": "Web Developer"
+  },
+  "index": {
+    "education": {
+      "title": "Education",
+      "school": {
+        "title": "IT-HTL Ybbs",
+        "subtitle": "(2011 - 2017)",
+        "text": "Main focus on media technologies"
+      }
+    },
+    "internships": {
+      "title": "Summer Internships",
+      "A1": {
+        "title": "A1 Telekom Austria",
+        "subtitle": "(Juli 2011, Juli 2014)",
+        "ul": [
+          "Installation and configuration of operating systems",
+          "Support in installation of POTS-, ISDN-, ADSL- and Business-Interfaces",
+          "Troubleshooting of A1-TV"
+        ]
+      },
+      "Quarzwerke": {
+        "title": "Quarzwerke Melk",
+        "subtitle": "(Juli 2016)"
+      }
+    },
+    "experience": {
+      "title": "Work Experience",
+      "it-center": {
+        "title": "IT-Center Ybbs",
+        "subtitle": "(19. März 2018 - 1. Februar 2019)",
+        "text": "Development and administration of 2 Apps for Android and IOS, with the Ionic Framework (Angular, SCSS, Cordova). Maintenance and development of the corresponding Website"
+      }
+    },
+    "knowledge": {
+      "title": "Special IT-Knowledge",
+      "grading": "(1 = advanced knowledge, 2 = good knowledge, 3 = basic knowledge)",
+      "programming": {
+        "title": "Programming",
+        "ul": [
+          "C, C#, Java (2)",
+          "Android, IOS (3)"
+        ]
+      },
+      "webdev": {
+        "title": "Web Development",
+        "ul": [
+          "HTML5, CSS, SCSS/LESS, JavaScript/Typescript, Ionic Framework, Node.js, RethinkDB (1)",
+          "Gulp/Grunt, PHP, Socket.IO (2)",
+          "Nuxt.js, Vue.js (3), Angular (3)"
+        ]
+      },
+      "other": {
+        "title": "Other",
+        "ul": [
+          "Typo3, Oracle, network technology and security (3)"
+        ]
+      }
+    },
+    "language": {
+      "title": "Linguistic Proficiency",
+      "text": "German and English with Diploma."
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "text": "Snowboarding, swimming, football (soccer), reading, landscape painting."
+    },
+    "personal": {
+      "title": "Persönliche Eigenschaften",
+      "text": "Independent working, helpfullnes, gained team skills in the football club SCU Emmersdorf."
+    }
   }
 }

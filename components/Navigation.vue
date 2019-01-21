@@ -8,7 +8,7 @@
       </div>
       <div class="w-full sm:w-1/2 lg:w-full text-center sm:text-left lg:text-center my-4">
         <h3>Daniel Rötzer</h3>
-        JavaScript Developer <br><br>
+        {{ $t("introduction.developer") }} <br><br>
 
         <a href="mailto:roetzer.daniel@gmail.com" class="mailto" target="_top">
           <i class="fas fa-envelope"></i>
@@ -46,7 +46,7 @@ export default {
     }
 
     &:hover {
-      color: map-get($colors, text);
+      color: map-get($colors, dark);
     }
   }
 

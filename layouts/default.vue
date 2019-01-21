@@ -64,6 +64,9 @@ export default {
   width: 100%;
   padding: 30px;
 
+  // Margin for Footer
+  margin-bottom: 35px;
+
   @media screen and (min-width: $utility-breakpoint){
     margin-left: $utility-width;
     //max-width: $content-width;

@@ -1,12 +1,18 @@
 @import "variables";
 @import "headings";
 @import "transitions";
+@import "section";
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #04031A;
+  color: map-get($colors, dark);//#04031A;
 }
 
 .font-handwriting {
   font-family: 'Kalam', cursive;
+}
+
+
+a {
+  color: map-get($colors, primary);
 }
