@@ -62,7 +62,7 @@ export default {
 
 .page-container {
   width: 100%;
-  padding: 30px;
+  padding: 30px 20px;
 
   // Margin for Footer
   margin-bottom: 35px;
@@ -70,6 +70,7 @@ export default {
   @media screen and (min-width: $utility-breakpoint){
     margin-left: $utility-width;
     //max-width: $content-width;
+    padding: 30px;
   }
 
   .page-content {
