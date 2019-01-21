@@ -8,7 +8,7 @@
       <section class="subsection">
         <header class="section-head">
           <h1 class="is-title">
-            <a href="http://www.sz-ybbs.ac.at" target="_blank">{{ $t("index.education.school.title") }} <i class="fas fa-external-link-square-alt"></i></a>
+            <a href="http://www.sz-ybbs.ac.at/" target="_blank">{{ $t("index.education.school.title") }} <i class="fas fa-external-link-square-alt"></i></a>
           </h1>
           <div class="is-subtitle">{{ $t("index.education.school.subtitle") }}</div>
         </header>
@@ -26,9 +26,7 @@
       <!-- A1 -->
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">
-            <a href="http://www.sz-ybbs.ac.at" target="_blank">{{ $t("index.internships.A1.title") }} <i class="fas fa-external-link-square-alt"></i></a>
-          </h1>
+          <h1 class="is-title">{{ $t("index.internships.A1.title") }}</h1>
           <div class="is-subtitle">{{ $t("index.internships.A1.subtitle") }}</div>
         </header>
         <div class="section-body">
@@ -55,13 +53,13 @@
       <section class="subsection">
         <header class="section-head">
           <h1 class="is-title">
-            <a href="www.it-center.at" target="_blank">{{ $t("index.experience.it-center.title") }} <i class="fas fa-external-link-square-alt"></i></a>
+            <a href="https://www.it-center.at/" target="_blank">{{ $t("index.experience.it-center.title") }} <i class="fas fa-external-link-square-alt"></i></a>
           </h1>
           <div class="is-subtitle">{{ $t("index.experience.it-center.subtitle") }}</div>
         </header>
         <div class="section-body">
           {{ $t("index.experience.it-center.text") }}
-          <a href="www.hellofriends.at" target="_blank">hellofriends.at <i class="fas fa-external-link-square-alt"></i></a>.
+          <a href="https://www.hellofriends.at/" target="_blank">hellofriends.at <i class="fas fa-external-link-square-alt"></i></a>.
           <br><br>
 
           <div v-if="$i18n.locale === 'de'">
