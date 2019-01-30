@@ -18,7 +18,7 @@
 
     <!-- Navbar for mobile -->
     <div class="mobile-navbar-menu" v-show="mobileMenuActive === true">
-      <nuxt-link class="navbar-item" @click.native="toggleMobileNavigation" v-for="item in navItems" :key="item.id" :to="item.to" :exact="item.exact">
+      <nuxt-link :class="'navbar-item delay-' + index" @click.native="toggleMobileNavigation" v-for="(item, index) in navItems" :key="item.id" :to="item.to" :exact="item.exact">
         {{item.pageName}}
       </nuxt-link>
 
@@ -170,6 +170,24 @@ export default {
       text-decoration: none;
       font-size: 24px;
       margin: 20px 0;
+
+      $duration: 0.5s;
+      $delay: 0.2;
+      animation: navbarItemAnimation $duration ease;
+
+      @keyframes navbarItemAnimation {
+        0% { transform: translateX(60px); }
+        100% { transform: translateX(0); }
+      }
+
+      &.delay-0 { animation-duration: $duration + 0s * $delay; }
+      &.delay-1 { animation-duration: $duration + 1s * $delay; }
+      &.delay-2 { animation-duration: $duration + 2s * $delay; }
+      &.delay-3 { animation-duration: $duration + 3s * $delay; }
+      &.delay-4 { animation-duration: $duration + 4s * $delay; }
+      &.delay-5 { animation-duration: $duration + 5s * $delay; }
+      &.delay-6 { animation-duration: $duration + 6s * $delay; }
+      &.delay-7 { animation-duration: $duration + 7s * $delay; }
 
       &.is-active {
         text-decoration: underline;

@@ -64,21 +64,52 @@
       "other": {
         "title": "Weitere gesammelte Kenntnisse",
         "ul": [
-          "Typo3, Oracle, network technology and security (3)"
+          "Typo3, Oracle, Netwerktechnik und Netzwerksicherheit (3)"
         ]
       }
     },
     "language": {
       "title": "Sprachkenntnisse",
-      "text": "Deutsch und Englisch - Maturaniveau."
+      "text": "Deutsch und Englisch - Maturaniveau"
     },
     "hobbies": {
       "title": "Hobbys",
-      "text": "Snowboarden, Schwimmen, Fußball, Lesen, Landschaftsmalerei."
+      "text": "Snowboarden, Schwimmen, Fußball, Lesen, Landschaftsmalerei"
     },
     "personal": {
       "title": "Persönliche Eigenschaften",
-      "text": "Selbstständiges Arbeiten, Hilfsbereitschaft, Erworbene Teamfähigkeiten im Fußballverein SCU Emmersdorf."
+      "text": "Selbstständiges Arbeiten, Hilfsbereitschaft, Erworbene Teamfähigkeiten im Fußballverein SCU Emmersdorf"
+    }
+  },
+  "about": {
+    "purpose": {
+      "title": "Welchen Zweck erfüllt diese Webseite?",
+      "text": "Diese Webseite ist ein persönliches Projekt und dient als Referenz, für meine Projekte und Erfahrungen."
+    },
+    "tools": {
+      "title": "Welche Utilities oder Tools wurden für die Entwicklung benutzt?",
+      "text": "Neben dem Hauptziel, eine Portfolio Webseite für mich zu entwickeln, sind die anderen 2 Hauptfaktoren: Responsiveness und Schnelligkeit. Meine Webseite soll nicht nur vollständig responsive sein, sondern auch sehr schnell. In Anbetracht meiner Ziele, beschreibe ich folgend welche Tools ich Nutze und warum.",
+      "nuxt": "Ich habe mich für Nuxt.js entschieden, weil es den Build-Prozess stark vereinfacht und Vue.js verwendet. Des Weiteren können mit Nuxt Server Side Rendered Applikationen erstellt werden, was deutliche Vorteile für SEO mitbringt. Außerdem ist es möglich, die Webseite als statisch generierte Vue Applikation zu exportieren, womit die Performance stark gesteigert wird.",
+      "tailwind": "Für dieses Projekt habe ich mich gegen eine Frontend Component Bibliothek wie Bootstrap oder Bulma entschieden, weil diese nicht in mein vorgestelltes Design passten. Trotzdem benötigte ich ein responsive Grid, weswegen ich mich für Tailwind CSS entschieden habe.",
+      "netlify": "Um meine Webseite zu hosten, benutze ich Netlify. Dieser Dienst bietet gute, gratis Nutzungsoptionen und der Veröffentlichungsprozess könnte nicht einfacher sein. Einmal Konfiguriert, veröffentlicht Netlify automatisch mein Projekt vom Master Branch aus meinem GitLab Repository. Ich muss lediglich meine Änderungen in den Master Branch pushen und Netlify erledigt den Rest."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "text": "Ich bin erreichbar unter:"
+    }
+  },
+  "projects": {
+    "school": {
+      "title": "Schulprojekte",
+      "jada": {
+        "text": "lfjal laksdjfl adlfajdfafadf"
+      }
+    },
+    "work": {
+      "title": "Arbeitsprojekte",
+      "hf_w": {
+        "title": "ladjfl akdlf jd oie naf ioa"
+      }
     }
   }
 }

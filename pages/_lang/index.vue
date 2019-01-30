@@ -7,9 +7,9 @@
       </header>
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">
+          <h2 class="is-title">
             <a href="http://www.sz-ybbs.ac.at/" target="_blank">{{ $t("index.education.school.title") }} <i class="fas fa-external-link-square-alt"></i></a>
-          </h1>
+          </h2>
           <div class="is-subtitle">{{ $t("index.education.school.subtitle") }}</div>
         </header>
         <div class="section-body">
@@ -26,7 +26,7 @@
       <!-- A1 -->
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">{{ $t("index.internships.A1.title") }}</h1>
+          <h2 class="is-title">{{ $t("index.internships.A1.title") }}</h2>
           <div class="is-subtitle">{{ $t("index.internships.A1.subtitle") }}</div>
         </header>
         <div class="section-body">
@@ -39,7 +39,7 @@
       <!-- Quarzwerke Melk -->
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">{{ $t("index.internships.Quarzwerke.title") }}</h1>
+          <h2 class="is-title">{{ $t("index.internships.Quarzwerke.title") }}</h2>
           <div class="is-subtitle">{{ $t("index.internships.Quarzwerke.subtitle") }}</div>
         </header>
       </section>
@@ -52,9 +52,9 @@
       </header>
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">
+          <h2 class="is-title">
             <a href="https://www.it-center.at/" target="_blank">{{ $t("index.experience.it-center.title") }} <i class="fas fa-external-link-square-alt"></i></a>
-          </h1>
+          </h2>
           <div class="is-subtitle">{{ $t("index.experience.it-center.subtitle") }}</div>
         </header>
         <div class="section-body">
@@ -86,7 +86,7 @@
       <!-- Programming -->
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">{{ $t("index.knowledge.programming.title") }}</h1>
+          <h2 class="is-title">{{ $t("index.knowledge.programming.title") }}</h2>
         </header>
         <div class="section-body">
           <ul>
@@ -98,7 +98,7 @@
       <!-- Web Development -->
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">{{ $t("index.knowledge.webdev.title") }}</h1>
+          <h2 class="is-title">{{ $t("index.knowledge.webdev.title") }}</h2>
         </header>
         <div class="section-body">
           <ul>
@@ -110,7 +110,7 @@
       <!-- Other -->
       <section class="subsection">
         <header class="section-head">
-          <h1 class="is-title">{{ $t("index.knowledge.other.title") }}</h1>
+          <h2 class="is-title">{{ $t("index.knowledge.other.title") }}</h2>
         </header>
         <div class="section-body">
           <ul>
@@ -138,6 +138,16 @@
       </header>
       <div class="section-body">
         {{ $t("index.hobbies.text") }}
+      </div>
+    </section>
+
+    <!-- Personal Qualitites -->
+    <section class="section">
+      <header class="section-head">
+        <h1 class="is-title">{{ $t("index.personal.title") }}</h1>
+      </header>
+      <div class="section-body">
+        {{ $t("index.personal.text") }}
       </div>
     </section>
   </div>

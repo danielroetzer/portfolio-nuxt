@@ -1,45 +1,30 @@
 <template>
   <div class="about">
-    <div class="main-title">What purpose has this website?</div>
-    <div class="infoblock">This website is a personal project and serves as reference, for my projects and experience.</div>
+    <div class="main-title">{{ $t("about.purpose.title") }}</div>
+    <div class="infoblock">{{ $t("about.purpose.text") }}</div>
 
-    <div class="main-title">What utilities or tools where used for development?</div>
+    <div class="main-title">{{ $t("about.tools.title") }}</div>
     <div class="infoblock">
-      <span>
-        Besides the main goal of building a portfolio website for myself, the other two major things are responsiveness and speed.
-        I wanted to not only build a fully responsive site, but also a really fast one. 
-        Keeping that in mind, the following describes the tools I used and why.
-      </span>
-      <br><br>
+      <div>{{ $t("about.tools.text") }}</div>
+      <br>
 
       <div class="sub-title">Nuxt.js</div>
-      <div>
-        I decided to use Nuxt.js, because it makes the build process really easy and uses Vue.js.
-        Furthermore, Nuxt lets you create server side rendered applications, which is a huge benefit for SEO.
-        In addition, there is an option to export your website as a static generated Vue application, which greatly improves performance.
-      </div>
+      <div>{{ $t("about.tools.nuxt") }}</div>
 
       <br>
 
       <div class="sub-title">Tailwind CSS</div>
-      <div>
-        For this project, I decided to not use a front-end component library like Bootstrap or Bulma, because they did not fit the design I had in mind for this website.
-        However, I still needed a responsive grid, so I picked Tailwind CSS.
-      </div>
+      <div>{{ $t("about.tools.tailwind") }}</div>
 
       <br>
 
       <div class="sub-title">Netlify</div>
-      <div>
-        To host my portfolio page, I use Netlify. It provides good free usage options and deploying could not be easier. 
-        Once setup, Netlify automatically deploys my project from the master branch in my GitLab repository. 
-        I simply push changes to the master branch and Netlify does the rest.
-      </div>
+      <div>{{ $t("about.tools.netlify") }}</div>
     </div>
 
-    <div class="main-title">Contact</div>
+    <div class="main-title">{{ $t("about.contact.title") }}</div>
     <div class="infoblock">
-      You can reach me under:
+      {{ $t("about.contact.text") }}
       <a href="mailto:roetzer.daniel@gmail.com" class="mailto" target="_top">
         <i class="fas fa-envelope"></i>
         <span>roetzer.daniel@gmail.com</span>
@@ -52,22 +37,36 @@
 <style lang="scss" scoped>
 @import "~assets/scss/_variables.scss";
 
-.infoblock {
-  font-size: 14px;
-  margin-bottom: 35px;
+.about {
+  .main-title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: map-get($colors, primary);
+  }
 
-  .mailto {
-    color: map-get($colors, dark);
-    text-decoration: none;
-    white-space: nowrap;
+  .sub-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: map-get($colors, primary);
+  }
 
-    i {
-      margin-left: 5px;
-      margin-right: 2px;
-    }
+  .infoblock {
+    font-size: 14px;
+    margin-bottom: 35px;
 
-    &:hover {
-      color: map-get($colors, primary);
+    .mailto {
+      color: map-get($colors, dark);
+      text-decoration: none;
+      white-space: nowrap;
+
+      i {
+        margin-left: 5px;
+        margin-right: 2px;
+      }
+
+      &:hover {
+        color: map-get($colors, primary);
+      }
     }
   }
 }

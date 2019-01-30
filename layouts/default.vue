@@ -62,7 +62,7 @@ export default {
 
 .page-container {
   width: 100%;
-  padding: 30px 20px;
+  padding: 20px;
 
   // Margin for Footer
   margin-bottom: 35px;

@@ -70,15 +70,46 @@
     },
     "language": {
       "title": "Linguistic Proficiency",
-      "text": "German and English with Diploma."
+      "text": "German and English with Diploma"
     },
     "hobbies": {
       "title": "Hobbies",
-      "text": "Snowboarding, swimming, football (soccer), reading, landscape painting."
+      "text": "Snowboarding, swimming, football (soccer), reading, landscape painting"
     },
     "personal": {
-      "title": "Persönliche Eigenschaften",
-      "text": "Independent working, helpfullnes, gained team skills in the football club SCU Emmersdorf."
+      "title": "Personal Qualities",
+      "text": "Independent working, helpfullnes, gained team skills in the football club SCU Emmersdorf"
+    }
+  },
+  "about": {
+    "purpose": {
+      "title": "What purpose has this website?",
+      "text": "This website is a personal project and serves as reference, for my projects and experience."
+    },
+    "tools": {
+      "title": "What utilities or tools where used for development?",
+      "text": "Besides the main goal of building a portfolio website for myself, the other two major things are responsiveness and speed. I wanted to not only build a fully responsive site, but also a really fast one. Keeping that in mind, the following describes the tools I used and why.",
+      "nuxt": "I decided to use Nuxt.js, because it makes the build process really easy and uses Vue.js. Furthermore, Nuxt lets you create server side rendered applications, which is a huge benefit for SEO. In addition, there is an option to export your website as a static generated Vue application, which greatly improves performance.",
+      "tailwind": "For this project, I decided to not use a front-end component library like Bootstrap or Bulma, because they did not fit the design I had in mind for this website. However, I still needed a responsive grid, so I picked Tailwind CSS.",
+      "netlify": "To host my portfolio page, I use Netlify. It provides good free usage options and deploying could not be easier. Once setup, Netlify automatically deploys my project from the master branch in my GitLab repository. I simply push changes to the master branch and Netlify does the rest."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "You can reach me under:"
+    }
+  },
+  "projects": {
+    "school": {
+      "title": "School Projects",
+      "jada": {
+        "text": "lfjal laksdjfl adlfajdfafadf"
+      }
+    },
+    "work": {
+      "title": "Work Projects",
+      "hf_w": {
+        "title": "ladjfl akdlf jd oie naf ioa"
+      }
     }
   }
 }
