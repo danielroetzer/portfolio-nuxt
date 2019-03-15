@@ -110,6 +110,20 @@
       "hf_w": {
         "title": "ladjfl akdlf jd oie naf ioa"
       }
+    },
+    "jada": {
+      "title": "JaDa",
+      "subtitle": "HTML, JavaScript, LESS, Grunt",
+      "content": "lakdfjladjf"
+    },
+    "rtvs": {
+      "title": "Real Time Voting System",
+      "subtitle": "Node.js, RethinkDB, Gulp",
+      "content": "lakdfjladjf"
+    },
+    "links": {
+      "gitlab": "GitLab",
+      "website": "Webseite"
     }
   }
 }
