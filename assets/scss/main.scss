@@ -15,3 +15,10 @@ body {
 a {
   color: map-get($colors, primary);
 }
+
+
+@media print {
+  i {
+    display: none !important;
+  }
+}

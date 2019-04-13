@@ -1,4 +1,7 @@
 {
+  "print": {
+    "text": "Print"
+  },
   "links": {
     "index": "Portfolio",
     "about": "About this Site",
