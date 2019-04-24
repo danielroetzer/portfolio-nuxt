@@ -113,7 +113,7 @@
     "rtvs": {
       "title": "Real Time Voting System",
       "subtitle": "Node.js, RethinkDB, Gulp, Stylus",
-      "content": "Bei RTVS (wie der Name bereits verrät) handelt es sich um ein Voting System, welches die Ergebnisse in Echtzeit anzeigt. Hierbei habe ich die Serverlogik mit Node.js realisiert. Mit Hilfe der Echtzeitfähigkeit von RethinkDB und Socket.io, werden neue Datensätze automatisch am Client aktualisiert (ohne das Fenster neu zu laden)."
+      "content": "Bei RTVS (wie der Name bereits verrät) handelt es sich um ein Voting System, welches die Ergebnisse in Echtzeit anzeigt. Hierbei habe ich die Serverlogik mit Node.js realisiert. Mithilfe der Echtzeitfähigkeit von RethinkDB und Socket.io, werden neue Datensätze automatisch am Client aktualisiert (ohne das Fenster neu zu laden)."
     },
     "hfw": {
       "title": "hello friends Webseite",
