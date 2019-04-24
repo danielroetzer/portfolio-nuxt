@@ -1,11 +1,22 @@
 {
+  "head": {
+    "index": {
+      "title": "Daniel Rötzer | Curriculum Vitae"
+    },
+    "about": {
+      "title": "Daniel Rötzer | About This Site"
+    },
+    "projects": {
+      "title": "Daniel Rötzer | My Projects"
+    }
+  },
   "print": {
     "text": "Print"
   },
   "links": {
     "index": "Curriculum Vitae",
-    "about": "About this Site",
-    "projects": "Projects",
+    "about": "About This Site",
+    "projects": "My Projects",
     "contact": "Contact",
     "german": "German",
     "english": "English"
@@ -43,7 +54,7 @@
       "it-center": {
         "title": "IT-Center Ybbs",
         "subtitle": "(19. März 2018 - 1. Februar 2019)",
-        "text": "Development and administration of 2 Apps for Android and IOS, with the Ionic Framework (Angular, SCSS, HTML, Cordova). Maintenance and development of the corresponding Website"
+        "text": "Development and administration of 2 Apps for Android and IOS with the Ionic Framework (Angular, SCSS, HTML, Cordova). Maintenance and development of the corresponding Website"
       }
     },
     "knowledge": {
@@ -73,7 +84,7 @@
     },
     "language": {
       "title": "Linguistic Proficiency",
-      "text": "German and English with Diploma"
+      "text": "English (B2) and german"
     },
     "hobbies": {
       "title": "Hobbies",

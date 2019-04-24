@@ -1,4 +1,4 @@
-const pkg = require('./package')
+// const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
@@ -10,12 +10,12 @@ module.exports = {
     /*htmlAttrs: {
       lang: 'en',
     },*/
-    title: pkg.name,
+    title: "Daniel Rötzer | Portfolio Website",
     meta: [
       { charset: 'utf-8' },
       { name: "author", content: "Daniel Rötzer" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'description', name: 'description', content: "My selfmade portfolio website, built with Nuxt.js" },
       { hid: 'keywords', name: 'keywords', content: "Nuxt.js, Vue.js, SCSS, i18n, Portfolio Website" }
     ],
     link: [
@@ -23,10 +23,6 @@ module.exports = {
       { href: "https://fonts.googleapis.com/css?family=Montserrat:300,400,700", rel: "stylesheet" },
       { href: "https://fonts.googleapis.com/css?family=Kalam:300,400,700", rel: "stylesheet" },
       { href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css", rel: "stylesheet" }
-      //{ href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css", rel: "stylesheet" }
-    ],
-    script: [
-      //{ src: "https://unpkg.com/ionicons@4.5.0/dist/ionicons.js", body: true } // Use body: true, to load scripts at the end of <body></body>
     ]
   },
 

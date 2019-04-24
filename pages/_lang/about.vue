@@ -34,6 +34,17 @@
 </template>
 
 
+<script>
+export default {
+  head () {
+    return {
+      title: this.$t("head.about.title")
+    }
+  }
+}
+</script>
+
+
 <style lang="scss" scoped>
 @import "~assets/scss/_variables.scss";
 
