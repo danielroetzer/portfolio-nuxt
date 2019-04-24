@@ -233,6 +233,8 @@ export default {
       font-size: 1.2em;
       width: 100%;
       padding: 8px 10px;
+      position: relative;
+      z-index: 1;
       
 
       &.is-active, &:hover {
@@ -240,6 +242,10 @@ export default {
         color: map-get($colors, dark);
         box-shadow: -1px 1px 4px #333;
         border-radius: 4px;
+      }
+
+      &:hover {
+        z-index: 2;
       }
     }
   }
