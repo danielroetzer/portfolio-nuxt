@@ -43,7 +43,7 @@
       "it-center": {
         "title": "IT-Center Ybbs",
         "subtitle": "(19. März 2018 - 1. Februar 2019)",
-        "text": "Development and administration of 2 Apps for Android and IOS, with the Ionic Framework (Angular, SCSS, Cordova). Maintenance and development of the corresponding Website"
+        "text": "Development and administration of 2 Apps for Android and IOS, with the Ionic Framework (Angular, SCSS, HTML, Cordova). Maintenance and development of the corresponding Website"
       }
     },
     "knowledge": {
@@ -108,27 +108,27 @@
     "jada": {
       "title": "JaDa",
       "subtitle": "HTML, JavaScript, LESS, Grunt",
-      "content": "JaDa was a project, which took half a year and the goal was to get to know new technologies like LESS and Grunt. We decided to build a front-end content library with inspiration from Bootstrap. We thought this would be the best way to work intensively with these technologies."
+      "content": "JaDa was a project, which took half a year and was realised by a classmate and me. The goal was to get to know new technologies like LESS and Grunt. We decided to build a front-end content library with inspiration from Bootstrap. We thought this would be the best way to work intensively with these technologies."
     },
     "rtvs": {
       "title": "Real Time Voting System",
       "subtitle": "Node.js, RethinkDB, Gulp, Stylus",
-      "content": "Like the name suggests, RTVS is a voting system, where the results are displayed in real time. The server logic was built with Node.js and with help of the realtime capabilities of RethinkDB and Socket.io, new data entries would be displayed automatically on the client (without the need to reload the page)."
+      "content": "Like the name suggests, RTVS is a voting system, where the results are displayed in real time. The server logic was built with Node.js. With help of the realtime capabilities of RethinkDB and Socket.io, new data entries are displayed automatically on the client (without the need to reload the page)."
     },
     "hfw": {
       "title": "hello friends Website",
       "subtitle": "PHP, jQuery, CSS",
-      "content": "hello friends is a cashback system, where you get a percentage of your purchase given back as Friendsbonus. Furthermore, you can order food on the website, as well as in the app and also redeem those earned Friendsbonus points."
+      "content": "Hello friends is a cashback system, where you get a percentage of your purchase given back as a Friendsbonus. Furthermore, you can order food on the website, as well as in the app and also redeem those earned Friendsbonus points."
     },
     "hfc": {
       "title": "hello friends App",
-      "subtitle": "Ionic Framework (Angular, SCSS, HTML)",
-      "content": "In the corresponding hello friends App, you can also order food and collect Friendsbonus. The earned Friendsbonus gets stored in the user account and can be redeemed with the QrCode within the app during checkout. The Ionic framework made it possible to develop the app for IOS and Android simultaneously. I alone was responsible to develop and manage the app."
+      "subtitle": "Ionic Framework (Angular, SCSS, HTML, Cordova)",
+      "content": "In the corresponding hello friends app, you can also order food and collect a Friendsbonus. The earned Friendsbonus gets stored in the user account and can be redeemed with the QrCode within the app during checkout. The Ionic framework made it possible to develop the app for IOS and Android simultaneously. I alone was responsible for developing and managing the app."
     },
     "hfp": {
       "title": "DELIVERY Partner App",
-      "subtitle": "Ionic Framework (Angular, SCSS, HTML)",
-      "content": "The orders, which are placed from the website or app, can be managed within this app. The partners can print these orders (via bluetooth), change delivery times, show the delivery address on Google Maps etc. DELIVERY Partner was also developed and maintained by me alone, but is only available for Android."
+      "subtitle": "Ionic Framework (Angular, SCSS, HTML, Cordova)",
+      "content": "The orders, which are placed from the website or app, can be managed within this app. The partners can print these orders (via bluetooth), change delivery times, show the delivery address on Google Maps etc. DELIVERY Partner was also developed and maintained by myself, but is only available for Android."
     }
   }
 }

@@ -43,7 +43,7 @@
       "it-center": {
         "title": "IT-Center Ybbs",
         "subtitle": "(19. März 2018 - 1. Februar 2019)",
-        "text": "Entwicklung und Betreuung zweier Apps, für Android und IOS, mithilfe des Ionic Frameworks (Angular, SCSS, Cordova). Verwaltung und Weiterentwicklung der zugehörigen Webseite"
+        "text": "Entwicklung und Betreuung zweier Apps, für Android und IOS, mithilfe des Ionic Frameworks (Angular, SCSS, HTML, Cordova). Verwaltung und Weiterentwicklung der zugehörigen Webseite"
       }
     },
     "knowledge": {
@@ -108,26 +108,26 @@
     "jada": {
       "title": "JaDa",
       "subtitle": "HTML, JavaScript, LESS, Grunt",
-      "content": "JaDa war ein halbjähriges Projekt, bei dem es das Ziel war, neue Technologien wie LESS und Grunt kennenzulernen. Dabei entschieden wir uns eine eigene Frontend-Content-Library zu entwickeln, welche als Vorbild Bootstrap verwendet. Wir dachten uns, das sei der Beste Weg, um intensiv mit diesen Technologien zu arbeiten."
+      "content": "JaDa war ein halbjähriges Projekt von einem Klassenkollegen und mir. Das Ziel war es neue Technologien wie LESS und Grunt kennenzulernen. Dabei entschieden wir uns eine eigene Frontend-Content-Library zu entwickeln, welche als Vorbild Bootstrap verwendet. Wir dachten dies sei der Beste Weg, um intensiv mit diesen Technologien zu arbeiten."
     },
     "rtvs": {
       "title": "Real Time Voting System",
       "subtitle": "Node.js, RethinkDB, Gulp, Stylus",
-      "content": "Bei RTVS (wie der name bereits verrät) handelt es sich um eine Voting System, das die Ergebnisse in Echtzeit anzeigt. Hierbei habe ich die Serverlogik mit Node.js realisiert und mit Hilfe der Echtzeitfähigkeit von RethinkDB und Socket.io, wurden neue Datensätze automatisch am Client aktualisiert (ohne das Fenster neu zu laden)."
+      "content": "Bei RTVS (wie der Name bereits verrät) handelt es sich um ein Voting System, welches die Ergebnisse in Echtzeit anzeigt. Hierbei habe ich die Serverlogik mit Node.js realisiert. Mit Hilfe der Echtzeitfähigkeit von RethinkDB und Socket.io, werden neue Datensätze automatisch am Client aktualisiert (ohne das Fenster neu zu laden)."
     },
     "hfw": {
       "title": "hello friends Webseite",
       "subtitle": "PHP, jQuery, CSS",
-      "content": "hello friends ist ein Cashback System, bei dem man bei bestimmten Partnern einen gewissen Betrag seines Einkaufs, als Friendsbonus geschenkt bekommt. Des Weiteren kann man auf der Webseite und in der App Essen bestellen, sowie den gesammelten Friendsbonus einlösen."
+      "content": "Hello friends ist ein Cashback System, bei dem man bei bestimmten Partnern einen gewissen Betrag seines Einkaufs, als Friendsbonus geschenkt bekommt. Des Weiteren kann man auf der Webseite und in der App Essen bestellen, sowie den gesammelten Friendsbonus einlösen."
     },
     "hfc": {
       "title": "hello friends App",
-      "subtitle": "Ionic Framework (Angular, SCSS, HTML)",
-      "content": "Die hello friends App wurde zugehörig zur Webseite entwickelt, wo man ebenfalls Essen bestellen und Friendsbonus sammeln kann. Der gesammelte Friendsbonus wird im Benutzer Account gespeichert und mit dem QrCode aus der App kann man diesen bei jeglichen Partnern an der Kassa einlösen. Das Ionic Framework ermöglichte es mir, die App für IOS und Android gleichzeitig zu entwickeln. Ich habe die Apps also vollständig alleine entwickelt und betreut."
+      "subtitle": "Ionic Framework (Angular, SCSS, HTML, Cordova)",
+      "content": "Die hello friends App wurde zugehörig zur Webseite entwickelt, wo man ebenfalls Essen bestellen und einen Friendsbonus sammeln kann. Der gesammelte Friendsbonus wird im Benutzer Account gespeichert. Mit dem QrCode aus der App kann man diesen bei jeglichen Partnern an der Kassa einlösen. Das Ionic Framework ermöglichte es mir, die App für IOS und Android gleichzeitig zu entwickeln. Ich habe die Apps also vollständig alleine entwickelt und betreut."
     },
     "hfp": {
       "title": "DELIVERY Partner App",
-      "subtitle": "Ionic Framework (Angular, SCSS, HTML)",
+      "subtitle": "Ionic Framework (Angular, SCSS, HTML, Cordova)",
       "content": "Die Bestellungen, die über die hello friends Webseite oder App getätigt werden, kann der Partner in dieser App verwalten. Die App ermöglicht es neue Bestellungen auszudrucken (via Bluetooth), Lieferzeiten zu ändern, Lieferadresse in Google Maps anzuzeigen etc. DELIVERY Partner wurde ebenfalls von mir alleine verwaltet und entwickelt, ist aber nur für Android verfügbar."
     }
   }

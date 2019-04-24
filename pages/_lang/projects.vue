@@ -217,6 +217,9 @@ export default {
       .project-body {
         .links {
           margin-top: 20px;
+          // padding: 5px 10px;
+          // border-radius: 16px;
+          // background-color: #F9F9F9;
 
           h3 {
             font-weight: 300;
