@@ -53,5 +53,10 @@
   @media screen and (min-width: $utility-breakpoint){
     padding-left: $utility-width + 15px;
   }
+
+  // Hide when printing
+  @media print {
+    display: none;
+  }
 }
 </style>

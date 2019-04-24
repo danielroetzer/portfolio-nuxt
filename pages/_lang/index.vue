@@ -150,5 +150,18 @@
         {{ $t("index.personal.text") }}
       </div>
     </section>
+
+    <Print/>
   </div>
 </template>
+
+
+<script>
+import Print from '~/components/Print.vue';
+
+export default {
+  components: {
+    Print
+  }
+}
+</script>

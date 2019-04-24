@@ -58,6 +58,11 @@ export default {
     z-index: 10;
     box-shadow: 1px 0 6px 0 #777;
   }
+
+  // Hide when printing page
+  @media print {
+    display: none;
+  }
 }
 
 .page-container {

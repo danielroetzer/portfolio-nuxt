@@ -16,6 +16,10 @@ export default ({ app, store }) => {
   });
 
   app.i18n.path = (link) => {
+    /**
+     * i18n documentation has this, but it messes with the nuxt-link .is-active class
+     * When on german locale, the active links would not display as active
+     */
     // if (app.i18n.locale === app.i18n.fallbackLocale) {
     //   return `/${link}`;
     // }
