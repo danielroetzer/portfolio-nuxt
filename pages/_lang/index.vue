@@ -68,7 +68,7 @@
           </div>
           <div v-else>
             More information about this can be found under
-            <nuxt-link :to="$i18n.path('projects')">my Projects</nuxt-link>.
+            <nuxt-link :to="$i18n.path('projects')">my projects</nuxt-link>.
           </div>
         </div>
       </section>
