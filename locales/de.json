@@ -1,11 +1,22 @@
 {
+  "head": {
+    "index": {
+      "title": "Daniel Rötzer | Lebenslauf"
+    },
+    "about": {
+      "title": "Daniel Rötzer | Über diese Seite"
+    },
+    "projects": {
+      "title": "Daniel Rötzer | Meine Projekte"
+    }
+  },
   "print": {
     "text": "Drucken"
   },
   "links": {
     "index": "Lebenslauf",
     "about": "Über diese Seite",
-    "projects": "Projekte",
+    "projects": "Meine Projekte",
     "contact": "Kontakt",
     "german": "Deutsch",
     "english": "Englisch"

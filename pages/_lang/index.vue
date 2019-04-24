@@ -63,12 +63,12 @@
           <br><br>
 
           <div v-if="$i18n.locale === 'de'">
-            Weitere Details hierzu findest du unter meinen 
-            <nuxt-link :to="$i18n.path('projects')">Projekten</nuxt-link>.
+            Weitere Details hierzu findest du unter 
+            <nuxt-link :to="$i18n.path('projects')">meinen Projekten</nuxt-link>.
           </div>
           <div v-else>
-            More information about this can be found under my 
-            <nuxt-link :to="$i18n.path('projects')">Projects</nuxt-link>.
+            More information about this can be found under
+            <nuxt-link :to="$i18n.path('projects')">my Projects</nuxt-link>.
           </div>
         </div>
       </section>
@@ -162,6 +162,11 @@ import Print from '~/components/Print.vue';
 export default {
   components: {
     Print
+  },
+  head () {
+    return {
+      title: this.$t("head.index.title")
+    }
   }
 }
 </script>

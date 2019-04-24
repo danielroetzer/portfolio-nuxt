@@ -114,6 +114,11 @@
 <script>
 
 export default {
+  head () {
+    return {
+      title: this.$t("head.projects.title")
+    }
+  },
   computed: {
     projects: function() {
       return {
@@ -127,12 +132,6 @@ export default {
           { key: "hfp", icon: "/img/projects/hfp.png", androidstore: "https://play.google.com/store/apps/details?id=at.itcenter.kubid.hellofriends.business" }
         ],
         personal: []
-      }
-    },
-    gridClass: function() {
-      return {
-        "w-full": !this.grid,
-        "w-1/2": this.grid
       }
     }
   }
